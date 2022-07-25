@@ -1,0 +1,287 @@
+@font-face {
+    font-family: "thor";
+    src: url(Rubik_Moonrocks/RubikMoonrocks-Regular.ttf);
+}
+@font-face {
+    font-family: "mochiy";
+    src: url(Mochiy_Pop_One/MochiyPopOne-Regular.ttf);
+}
+@font-face {
+    font-family: "courgette";
+    src: url(Courgette/Courgette-Regular.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    background-image: linear-gradient( to left,rgba(0, 0, 0, 0.897),black);
+ position: sticky;
+ top: 1px;
+}
+header h3 {
+    margin-left: 15px;
+    color: #F5F5DC;
+    font-size: 25px;
+    font-family: "thor";
+    animation-name: sapa;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes sapa {
+    0%{color: #F5F5DC;}
+    25%{color: #f2e5d9;}
+    50%{color: #efdccc;}
+    75%{color: #e9d3cd;}
+    100%{color: #dbc2ad;}
+}
+
+.navbar {
+    margin-left: 42%;
+    margin-top: 22px;
+}
+.navbar a{
+    padding: 0 0 0 85px;
+ text-decoration: none;
+    color:#F5F5DC ;
+}
+main {
+
+}
+main h4 {
+text-align: right;
+font-size: 28px;
+font-family: "courgette";
+padding-top: 30px;
+}
+main img {
+    float: left;
+position: relative;
+bottom: 100px;
+left: 60px;
+border-radius: 22px;
+box-shadow: 10px 10px rgba(0,0,0,0.2), 10px 10px rgba(0,0,0,0.19);
+}
+footer {
+    margin-top: 300px;
+    display: flex;
+}
+footer p {
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: "mochiy";
+}
+.footerw {
+    animation-name: wega;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes wega {
+    0% {transform: skewY(0deg);}
+    25% {transform: skewY(15deg);}
+    50% {transform: skewY(0deg);}
+    75%{transform: skewY(-15deg);}
+    100%{transform: skewY(0deg);}
+}
+@media screen and (min-width:279px) and (max-width:299px){
+    header h3 {
+        margin-left: 3px;
+        font-size:12px;
+    }
+.navbar {
+        margin-left: 13.5%;
+        margin-top: 8px;
+    } 
+.navbar a {
+    padding: 0 0 0 5px;
+    font-size: 10px;
+}
+main h4 {
+    font-size: 13px;
+    padding: 3px;
+}
+.outlook {
+    margin-left: 35px;
+}
+.yoyo {
+    margin-left: 30px;
+}
+.phone {
+    margin-left: 30px;
+}
+main img {
+    height: 250px;
+    width : 45%;
+    position: relative;
+bottom: 20px;
+left: 15px;
+}
+footer p {
+    font-size: 10px ;
+    margin-left: 30px;
+}
+footer {
+    margin-top: 350px;
+}
+}
+@media screen and (width:300px){
+    header h3 {
+        margin-left: 3px;
+        font-size:12px;
+    }
+.navbar {
+        margin-left: 13.5%;
+        margin-top: 8px;
+    } 
+.navbar a {
+    padding: 0 0 0 5px;
+    font-size: 10px;
+}
+main h4 {
+    font-size: 13px;
+    padding: 3px;
+}
+.outlook {
+    margin-left: 35px;
+}
+.yoyo {
+    margin-left: 30px;
+}
+.phone {
+    margin-left: 30px;
+}
+main img {
+    height: 250px;
+    width : 45%;
+    position: relative;
+bottom: 20px;
+left: 15px;
+}
+footer p {
+    font-size: 10px ;
+    margin-left: 30px;
+}
+footer {
+    margin-top: 350px;
+}
+    
+}
+@media screen and (min-width:301px) and (max-width:448px){
+    header h3 {
+        margin-left: 3px;
+        font-size:14px;
+    }
+.navbar {
+        margin-left: 6%;
+        margin-top: 10px;
+    } 
+.navbar a {
+    padding: 0 0 0 7px;
+    font-size: 11px;
+}
+main h4 {
+    font-size: 14px;
+    padding: 7px;
+}
+.outlook {
+    margin-left: 35px;
+}
+main img {
+    height: 240px;
+    width : 37%;
+    position: relative;
+bottom: 25px;
+left: 10px;
+}
+footer p {
+    font-size: 10px ;
+}
+footer {
+    margin-top: 390px;
+}
+}
+@media screen and (min-width:450px) and (max-width:649px){
+    header h3 {
+        margin-left: 7px;
+        font-size:15px;
+    }
+.navbar {
+        margin-left: 15%;
+        margin-top: 15px;
+    } 
+.navbar a {
+    padding: 0 0 0 40px;
+    font-size: 14px;
+}
+main h4 {
+    font-size: 16px;
+    padding: 12px;
+}
+main img {
+    height: 280px;
+    width : 32%;
+    position: relative;
+bottom: 40px;
+left: 30px;
+}
+footer p {
+    font-size: 18px ;
+}
+footer {
+    margin-top: 380px;
+}
+}
+@media screen and (min-width:650px) and (max-width:899px){
+header h3 {
+        margin-left: 10px;
+        font-size:18px;
+    }
+.navbar {
+        margin-left: 18%;
+    } 
+.navbar a {
+    padding: 0 0 0 60px;
+    font-size: 14px;
+}
+main h4 {
+    font-size: 19px;
+    padding: 15px;
+}
+main img {
+    height: 330px;
+    position: relative;
+bottom: 100px;
+left: 35px;
+}
+footer p {
+    font-size: 18px ;
+}
+footer {
+    margin-top: 380px;
+}
+}
+@media screen and (min-width:900px) and (max-width:1200px){
+header h3 {
+    margin-left: 12px;
+    font-size:22px;
+}
+.navbar {
+    margin-left: 26%;
+}
+main h4 {
+    font-size: 25px;
+    padding: 23px;
+}
+main img {
+position: relative;
+bottom: 120px;
+left: 75px;
+}
+footer p {
+    font-size: 22px ;
+}
+footer {
+    margin-top: 350px;
+}
+}
