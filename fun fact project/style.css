@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Alpha";
+    src: url(Alfa_Slab_One/AlfaSlabOne-Regular.ttf);
+}
+@font-face {
+    font-family: "rubik";
+    src: url(Rubik_Moonrocks/RubikMoonrocks-Regular.ttf);
+}
+body{
+    background-image: linear-gradient(#EC5800,#FF4433,#FF5F1F);
+}
+main{
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "rubik";
+}
+main h3{
+    font-size: 40px;
+    font-family: "Alpha";
+}
+img{
+    height: 260px;
+    width: 400px;
+    border-radius: 50px;
+}
+button{
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:#E35335 ;
+}
+.show{
+    display: none;
+}
+@keyframes spin {
+    0%{transform: rotatez(0deg);}
+    12.5%{transform: rotatez(45deg);}
+    25%{transform: rotatez(90deg);}
+    37.5%{transform: rotatez(135deg);}
+    50%{transform: rotatez(180deg);}
+    62.5%{transform: rotatez(225deg);}
+    75%{transform: rotatez(270deg);}
+    87.5%{transform: rotatez(315deg);}
+    100%{transform: rotatez(360deg);}
+}
+.spinner{
+    animation-name: spin;
+    animation-duration: 400ms;
+    animation-iteration-count: infinite;
+}
+
+
