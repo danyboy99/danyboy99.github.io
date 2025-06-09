@@ -1,99 +1,893 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>danilo99</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Omotehinse - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <script src="script.js" defer></script>
-</head>
-<body>
-<header id="header">
-        <h1>DANILO 99</h1>
-        <button class="menu "> click <span class="circle"></span></button>
-    </header>
-    
-    <main id="main">
-        <h4>hello, &#9995;&#127996; my name is Daniel Oluwasegun omotehinse (AKA) "Danilo99" , </h4>
-      <h4>I'm a web developer , a frontend developer  </h4>
-         <h4> and i also love playing  my instrument (drums,talking drums and bass guiter)</h4>
-         <img class="profile-pic" src="images/IMG_E7838.JPG" alt="profile picture">
-    </main>
-    <div class="about-container" id="about">
-        <div class="about animate">
-            <button id="about-close" class="close">X</button>
-            <img src="images/IMG_7835.JPG" class="about-img" width="200px" height="200px" alt="Daniel's picture">
-            <h3> I'm  Daniel oluwasegun omotehinse  </h3>
-            <P>I live in Lagos, Nigeria 
-             have wanted to be a programmer since when i was in high school
-            but still an up coming frontend web developer
-            my goal is to be able to work from home as a fullstack web developer
-            i have been updating my frontend skills with html5 & Css5 & javascript
-            i enjoy all aspect of the web development processfrom coding the Html, styling with Css , making it interactive with javascript and connecting it to the backend database</P>
-            <h4>i am also a very jovial person,if i should pick an alternative career it will be a comedian &#128514; </h4>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Daniel<span class="accent">.</span></h2>
         </div>
-    </div>
-    <div class="contact-container" id="contact">
-        <div class="contact animate">
-            <button id="contact-close" class="close">X</button>
-            <div class="phone">
-                <h3>Phone no    <a href="tel:+2349056207788"> +2349056207788</a></h3>
-                
-            </div>
-            <div class="social-media">
-                <h3>social media </h3>
-                <a href="https://web.facebook.com/daniel.omotehinse.3" target="_blank"><img src="images/facebook.png" alt="facebook" ></a>
-                <a href="https://twitter.com/Dahnilo_99" target="_blank"><img src="images/download.png" alt="twitter"></a>
-                <a href="https://www.instagram.com/omotehinse_99/" target="_blank"><img src="images/download.jpg" alt="instagram"></a>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#certificates" class="nav-link">Certificates</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
 
-                <p>click the icon to check my social media handle</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              Hi, I'm <span class="accent">Daniel Omotehinse</span>
+            </h1>
+            <h2 class="hero-subtitle">
+              <span class="typing-text"></span>
+            </h2>
+            <p class="hero-description">
+              Passionate Full Stack Developer creating dynamic web experiences
+              with modern technologies. I transform ideas into elegant,
+              functional digital solutions.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
-            <div class="mail">
-                <h3>Email :</h3><a href="mailto:omotehinse99@gmail.com">omotehinse99@gmail.com</a>
-                <a href="mailto:danielomotehinse@yahoo.com"> danielomotehinse@yahoo.com</a>
+            <div class="social-links">
+              <a
+                href="https://web.facebook.com/daniel.omotehinse.3"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://twitter.com/Dahnilo_99"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/omotehinse_99/"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://github.com/danyboy99"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
             </div>
-            <div class="location">
-                <h4>Location</h4>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3658751129706!2d3.5944859142668086!3d6.601372224085842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103be573de5205cb%3A0xf057e9588f2f0878!2s25%20Classics%20Palace%20St%2C%20Ikorodu%20104102%2C%20Mowo%20Kekere!5e0!3m2!1sen!2sng!4v1658750509399!5m2!1sen!2sng" 
-                    width="70%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="hero-image">
+            <div class="image-container">
+              <img
+                src="images/IMG_E7838.JPG"
+                alt="Daniel Omotehinse"
+                class="profile-image"
+              />
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="images/IMG_7835.JPG"
+              alt="Daniel Omotehinse"
+              class="about-img"
+            />
+            <div class="about-image-overlay"></div>
+          </div>
+          <div class="about-text">
+            <h3 class="about-name">Daniel Oluwasegun Omotehinse</h3>
+            <p class="about-role">Full Stack Web Developer</p>
+            <div class="about-description">
+              <p>
+                Based in Lagos, Nigeria, I've been passionate about programming
+                since high school. My journey as a developer is driven by the
+                desire to create meaningful digital experiences and work
+                remotely as a full-stack developer.
+              </p>
+              <p>
+                I specialize in modern web technologies including HTML5, CSS3,
+                JavaScript, Node.js, and database management. I enjoy every
+                aspect of the development process - from crafting clean HTML
+                structure and beautiful CSS styling to creating interactive
+                JavaScript functionality and robust backend systems.
+              </p>
+              <p>
+                When I'm not coding, you'll find me playing my instruments -
+                drums, talking drums, and bass guitar. I'm also quite jovial,
+                and if I had to pick an alternative career, it would definitely
+                be comedy! 😄
+              </p>
+            </div>
+            <div class="about-stats">
+              <div class="stat">
+                <h4>2+</h4>
+                <p>Years Experience</p>
+              </div>
+              <div class="stat">
+                <h4>10+</h4>
+                <p>Projects Completed</p>
+              </div>
+              <div class="stat">
+                <h4>100%</h4>
+                <p>Client Satisfaction</p>
+              </div>
+            </div>
+            <a href="about.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Technologies I work with</p>
+        </div>
+        <div class="skills-content">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <h3>HTML5</h3>
+              <p>Semantic markup and modern HTML standards</p>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="95"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <h3>CSS3</h3>
+              <p>Modern styling, animations, and responsive design</p>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="90"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <h3>JavaScript</h3>
+              <p>ES6+, DOM manipulation, and modern frameworks</p>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="85"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-node-js"></i>
+              </div>
+              <h3>Node.js</h3>
+              <p>Server-side JavaScript and backend development</p>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="80"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3>Express.js</h3>
+              <p>RESTful APIs and web application framework</p>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="75"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Databases</h3>
+              <p>SQL and NoSQL database management</p>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="70"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-additional">
+            <h3>Additional Skills</h3>
+            <div class="additional-skills">
+              <span class="skill-tag">Git & GitHub</span>
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">API Development</span>
+              <span class="skill-tag">Web Security</span>
+              <span class="skill-tag">Performance Optimization</span>
+              <span class="skill-tag">Testing</span>
+            </div>
+            <a href="stack.html" class="btn btn-secondary">View Full Stack</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Some of my recent work</p>
+        </div>
+        <div class="projects-grid">
+          <!-- Featured Professional Projects -->
+          <div class="project-card featured">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Danilo Store E-commerce"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://danilo-store.onrender.com/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="https://github.com/danyboy99" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
                 </div>
-            
-        </div>
-    </div>
-    <div class="stack-container">
-        <div class="stack animate">
-            <button id="stack-close" class="close">X</button>
-            <h3>Html 5</h3>
-            <h3>Css</h3>
-            <h3>javascript</h3>
-            <h3>Js React</h3>
-        </div>
-    </div>
-        <div class="nav nav-black">
-            <div  id="project-nav">
-            <a href=" https://danyboy99.github.io/cat-fact/">cat-fact api</a>
-            <a href=" https://danyboy99.github.io/expanding-card/">expanding card</a>
-            <a href=" https://danyboy99.github.io/live-user-filter/">user live filter</a>
-            <a href="https://danyboy99.github.io/split-landing-page/">split landing page</a>
-            <a href=" https://danyboy99.github.io/quiz-app/">quiz-app</a>
-            <a href=" https://danyboy99.github.io/movie-site/">movie-site</a>
-            <a href="#">project 7</a>
-            <a href="#">project 8</a>
+              </div>
             </div>
-            <div class="nav nav-white" id="toggle">
-                <button class="cancel">X</button>
-                <h4>Check me out </h4>
-                <div class="list">
-                    <a href="#" id="About-btn">About</a>
-                    <a href="#" id="contact-btn">Contact</a>
-                    <a href="#" id="stack-btn">Stack</a>
-                    <a href="#" id="project">project</a>
+            <div class="project-content">
+              <h3>Danilo Store - E-Commerce Platform</h3>
+              <p>
+                A comprehensive e-commerce solution featuring product
+                management, secure payment processing, user authentication, and
+                an intuitive admin panel for inventory management.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Stripe API</span>
+                <span class="tech-tag">Express.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card featured">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Nine9gist Blog"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://nine9gistblog.onrender.com/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="https://github.com/danyboy99" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
                 </div>
+              </div>
             </div>
+            <div class="project-content">
+              <h3>Nine9gist Blog - Content Management System</h3>
+              <p>
+                A modern blog platform with rich text editing, category
+                management, user comments, SEO optimization, and a powerful
+                admin dashboard for content creators.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">TinyMCE</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card featured">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Student Evaluation System"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://student-evaluation-system-ceps.onrender.com/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="https://github.com/danyboy99" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>SEPS - Student Evaluation & Performance System</h3>
+              <p>
+                An educational platform enabling students to track academic
+                performance, receive personalized feedback, generate progress
+                reports, and set learning goals.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Angular</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Chart.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Demo Projects -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/project-placeholder.jpg"
+                alt="Cat Fact API"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://danyboy99.github.io/cat-fact/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="https://github.com/danyboy99" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Cat Fact API</h3>
+              <p>
+                Interactive web application that fetches and displays random cat
+                facts using API integration.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">API</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/project-placeholder.jpg"
+                alt="Quiz App"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://danyboy99.github.io/quiz-app/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="https://github.com/danyboy99" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Quiz Application</h3>
+              <p>
+                Interactive quiz app with score tracking and multiple question
+                types.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Local Storage</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/project-placeholder.jpg"
+                alt="Movie Site"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://danyboy99.github.io/movie-site/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="https://github.com/danyboy99" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Movie Database Site</h3>
+              <p>
+                Movie discovery platform with search functionality and detailed
+                movie information.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">API</span>
+                <span class="tech-tag">Responsive</span>
+              </div>
+            </div>
+          </div>
         </div>
-    <footer id="footer">
-        <h4>anything is posible, you just have to believe and  try</h4>
+
+        <!-- View More Projects Button -->
+        <div class="projects-cta">
+          <a href="#" class="btn btn-secondary" id="view-more-projects"
+            >View All Projects</a
+          >
+        </div>
+
+        <!-- Hidden Additional Projects -->
+        <div
+          class="projects-grid additional-projects"
+          id="additional-projects"
+          style="display: none; margin-top: 3rem"
+        >
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/project-placeholder.jpg"
+                alt="Expanding Cards"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://danyboy99.github.io/expanding-card/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="https://github.com/danyboy99" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Expanding Cards</h3>
+              <p>
+                Beautiful animated card component with smooth transitions and
+                hover effects.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/project-placeholder.jpg"
+                alt="User Live Filter"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://danyboy99.github.io/live-user-filter/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="https://github.com/danyboy99" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Live User Filter</h3>
+              <p>
+                Real-time search and filter functionality for user data with
+                dynamic results.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">API</span>
+                <span class="tech-tag">Search</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/project-placeholder.jpg"
+                alt="Split Landing Page"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://danyboy99.github.io/split-landing-page/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="https://github.com/danyboy99" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Split Landing Page</h3>
+              <p>
+                Creative split-screen landing page with interactive hover
+                animations.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Animation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Certificates & Achievements</h2>
+          <p class="section-subtitle">My professional certifications</p>
+        </div>
+        <div class="certificates-grid">
+          <div class="certificate-card" data-certificate="javascript">
+            <div class="certificate-image">
+              <img
+                src="./images/freecodecamp-javascript-certificate.png"
+                alt="JavaScript Certificate"
+                class="cert-img"
+              />
+              <div class="certificate-overlay">
+                <div class="certificate-info">
+                  <h3>JavaScript Algorithms and Data Structures</h3>
+                  <p>FreeCodeCamp</p>
+                  <button class="view-cert-btn">View Certificate</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="certificate-card" data-certificate="backend">
+            <div class="certificate-image">
+              <img
+                src="./images/Screenshot 2023-09-12 154253.png"
+                alt="Backend Certificate"
+                class="cert-img"
+              />
+              <div class="certificate-overlay">
+                <div class="certificate-info">
+                  <h3>Backend Development</h3>
+                  <p>Professional Certification</p>
+                  <button class="view-cert-btn">View Certificate</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's work together</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Phone</h3>
+                <a href="tel:+2349056207788">+234 905 620 7788</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <a href="mailto:omotehinse99@gmail.com"
+                  >omotehinse99@gmail.com</a
+                >
+                <a href="mailto:danielomotehinse@yahoo.com"
+                  >danielomotehinse@yahoo.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Location</h3>
+                <p>Lagos, Nigeria</p>
+              </div>
+            </div>
+            <div class="contact-social">
+              <h3>Follow Me</h3>
+              <div class="social-links">
+                <a
+                  href="https://web.facebook.com/daniel.omotehinse.3"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://twitter.com/Dahnilo_99"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/omotehinse_99/"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://github.com/danyboy99"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3658751129706!2d3.5944859142668086!3d6.601372224085842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103be573de5205cb%3A0xf057e9588f2f0878!2s25%20Classics%20Palace%20St%2C%20Ikorodu%20104102%2C%20Mowo%20Kekere!5e0!3m2!1sen!2sng!4v1658750509399!5m2!1sen!2sng"
+            width="100%"
+            height="300"
+            style="border: 0; border-radius: 10px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+        <a href="contact.html" class="btn btn-secondary">Full Contact Page</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Daniel Omotehinse</h3>
+            <p>
+              Full Stack Developer passionate about creating amazing web
+              experiences.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://web.facebook.com/daniel.omotehinse.3"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://twitter.com/Dahnilo_99"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/omotehinse_99/"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://github.com/danyboy99"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Frontend Development</a></li>
+              <li><a href="#">Backend Development</a></li>
+              <li><a href="#">API Development</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="footer-contact">
+              <p><i class="fas fa-phone"></i> +234 905 620 7788</p>
+              <p><i class="fas fa-envelope"></i> omotehinse99@gmail.com</p>
+              <p><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Daniel Omotehinse. All rights reserved.</p>
+          <p class="footer-quote">
+            "Anything is possible, you just have to believe and try"
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img
+          id="modal-certificate"
+          src=""
+          alt="Certificate"
+          class="modal-img"
+        />
+      </div>
+    </div>
+  </body>
 </html>
